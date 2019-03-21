@@ -1,9 +1,9 @@
 AppEnv = {
   // @if ENV == 'DEVELOPMENT'
-  baseApiUrl: 'http://localhost:3001/',
+  base_iframe_url: 'http://localhost:3001/',
   debug: true,
   // @endif
   // @if ENV == 'PRODUCTION'
-  baseApiUrl: 'https://app.codhab.df.gov.br/'
+  base_iframe_url: 'http://app.codhab.df.gov.br/'
   // @endif
 }

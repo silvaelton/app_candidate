@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="340000" id="com.codhab.codhabapp" version="3.4.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="400000" id="com.codhab.codhabapp" version="4.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>CODHAB</name>
     <description>
-    Aplicativo da CODHAB
+    Aplicativo CODHAB
   </description>
-    <author email="vitalino.victor@gmail.com" href="http://www.codhab.df.gov.br">
-    Victor Fernandes Vitalino Coimbra
+    <author email="elton.chrls@gmail.com" href="http://www.codhab.df.gov.br">
+    Elton Silva
   </author>
     <content src="index.html" />
     <access origin="*" />

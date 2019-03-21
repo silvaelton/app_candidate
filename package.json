@@ -30,6 +30,7 @@
     "@ionic/cli-plugin-cordova": "1.6.2",
     "@ionic/cli-plugin-gulp": "1.1.1",
     "@ionic/cli-plugin-ionic1": "2.1.1",
+    "@ionic/lab": "1.0.24",
     "@ionic/v1-toolkit": "1.0.12",
     "bower": "^1.8.2",
     "gulp": "^3.9.1",
