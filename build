@@ -1,0 +1,9 @@
+gulp prod
+
+ionic cordova build android --prod --release
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore ./platforms/android/app/build/outputs/apk/armv7/release/app-armv7-release-unsigned.apk alias_name 
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore key.keystore ./platforms/android/app/build/outputs/apk/x86/release/app-x86-release-unsigned.apk alias_name 
+
+zipalign -v 4 ./platforms/android/app/build/outputs/apk/armv7/release/app-armv7-release-unsigned.apk ./dist/codhab-$1-xarmv7.apk
+zipalign -v 4 ./platforms/android/app/build/outputs/apk/x86/release/app-x86-release-unsigned.apk ./dist/codhab-$1-x86.apk
