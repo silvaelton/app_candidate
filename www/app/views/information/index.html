@@ -1,3 +1,13 @@
-<div class="bar bar-header bar-light">
-  <h1 class="title">bar-light</h1>
-</div>
+<ion-view hide-nav-bar="true"></ion-view>
+<ion-view>
+  <div class="bar bar-header bar-light">
+    <h3>Sobre o aplicativo</h3>
+  </div>
+  
+  <ion-content scroll="true" id="content">
+    <div class="card">
+      Token: {{push_token}}
+      UserID: {{device_id}}  
+    </div>
+  </ion-content>
+</ion-view>

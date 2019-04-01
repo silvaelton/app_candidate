@@ -22,8 +22,6 @@ app.run(function($ionicPlatform) {
       cordova.plugins.Keyboard.disableScroll(false);
     }
 
-    $scope.$broadcast('scroll.resize')
-
     if(window.StatusBar) {
       StatusBar.styleDefault();
       StatusBar.overlaysWebView(false);
@@ -43,16 +41,12 @@ app.run(function($ionicPlatform) {
       .startInit("f8691fb0-e0c9-4d6a-b927-c795b65727c5")
       .handleNotificationOpened(notificationOpenedCallback)
       .endInit();
-      /*END OneSignal*/
 
-      window.plugins.OneSignal.getIds(function(ids) {
-        window.localStorage['UserId'] = ids.userId;
-        console.log("UserId: " + ids.userId);
-        window.localStorage['PushToken'] = ids.pushToken;
-        console.log("oi"+ window.localStorage['PushToken']);
-        console.log("oi"+ window.localStorage['UserId']);
-        console.log('getIds: ' + JSON.stringify(ids));
+    window.plugins.OneSignal.getIds(function(ids) {
+      window.localStorage['device_id'] = ids.userId;
+      window.localStorage['push_token'] = ids.pushToken;
     });
+
   });
 
 });
