@@ -76,6 +76,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
 app.config(function ($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
+    'http://localhost:3001/**',
     'http://10.36.26.90:3001/**',
     'http://app.codhab.df.gov.br/**'
   ]);

@@ -1,13 +1,60 @@
 <ion-view hide-nav-bar="true"></ion-view>
+
 <ion-view>
-  <div class="bar bar-header bar-light">
-    <h3>Sobre o aplicativo</h3>
+  <div id="header">
+    <div class="row">
+      <div class="col col-10">
+        <a href="#" ng-click="go_to_home()">
+          <ion-icon name="arrow-round-back"></ion-icon>
+        </a>
+      </div>
+      <div class="col">
+        <h3>Sobre o aplicativo</h3>
+      </div>
+    </div>
   </div>
+
   
   <ion-content scroll="true" id="content">
+    <div class="card" ng-if="env == 'development'">
+      <h4 class="text-center">Informação do dispostivo</h4>
+      <h5> Token: {{push_token}} </h5>
+      <h5> UserID: {{device_id}} </h5>
+      </p>
+    </div>
+  </ion-content>
+
+  <ion-content scroll="true" id="content" class="text-center">
+
     <div class="card">
-      Token: {{push_token}}
-      UserID: {{device_id}}  
+      
+
+      <div class="row">
+        <div class='col'>
+          <a href="#" onclick="cordova.InAppBrowser.open('http://www.codhab.df.gov.br/termos-uso', '_system');" >Termos de uso</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <a href="#" onclick="cordova.InAppBrowser.open('http://www.ouvidoria.df.gov.br/', '_system');">Ouvidoria</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <a href="#" onclick="cordova.InAppBrowser.open('http://www.codhab.df.gov.br/problemas-sugestoes', '_system');">Problemas e Sugestões</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class='col'>
+          <b>
+            Versão {{version}}
+          </b>
+        </div>
+      </div>
+
     </div>
   </ion-content>
 </ion-view>

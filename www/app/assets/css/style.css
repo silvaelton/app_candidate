@@ -1,12 +1,11 @@
 #content {
   margin-top: 15%;
   padding-bottom: 15%;
-  background-color: #f6d504;
+  background-color: #ffd040;
 }
 
 .bar {
   background-size: 0px !important;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .bar-header {
@@ -34,12 +33,13 @@
 .title {
   font-weight: bold;
   font-size: 20px;
-  color: #606060;
+  color: #858585;
 }
 
 .subtitle {
   font-size: 14px;
-  padding-top: 10px;
+  padding-top: 4px;
+  color: #727272;
 }
 
 iframe {
@@ -54,3 +54,31 @@ ion-content {
 .scroll {
   height: auto !important;
 }
+
+#header {
+  margin-top: 8px;
+}
+
+#header a {
+  font-size: 25px;
+  color: gray;
+}
+
+#header h3 {
+  font-size: 22px;
+  color: #242424;
+}
+
+
+#content .card {
+  padding: 15px;
+}
+
+#content .row {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+#content a {
+  color: #4f4f4f;
+}   
