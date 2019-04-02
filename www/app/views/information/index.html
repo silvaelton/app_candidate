@@ -27,7 +27,12 @@
   <ion-content scroll="true" id="content" class="text-center">
 
     <div class="card">
-      
+
+      <div class="row">
+        <div class='col'>
+          <b>Links úteis</b>
+        </div>
+      </div>
 
       <div class="row">
         <div class='col'>
@@ -40,21 +45,37 @@
           <a href="#" onclick="cordova.InAppBrowser.open('http://www.ouvidoria.df.gov.br/', '_system');">Ouvidoria</a>
         </div>
       </div>
-
+    </div>
+    <div class="card">
       <div class="row">
         <div class="col">
-          <a href="#" onclick="cordova.InAppBrowser.open('http://www.codhab.df.gov.br/problemas-sugestoes', '_system');">Problemas e Sugestões</a>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class='col'>
           <b>
-            Versão {{version}}
+            Problemas e Sugestões
           </b>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <a href="mailto:suporte.app@codhab.df.gov.br">suporte.app@codhab.df.gov.br</a>
+        </div>
+      </div>
+    </div>
 
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class='col'>
+          <b>
+            Versão do aplicativo 
+          </b>
+        </div>
+      </div>
+      <div class="row">
+        <div class='col'>
+          {{version}}
+        </div>
+      </div>
     </div>
   </ion-content>
 </ion-view>
