@@ -1,0 +1,36 @@
+<ion-view hide-nav-bar="true"></ion-view>
+<ion-view>
+
+  <div class="bar bar-header bar-light">
+    <img src="app/assets/images/marca.png">
+  </div>
+
+  <ion-content scroll="true" id="content">
+    <div class="card">
+      <div class="item item-text-wrap">
+        <div class="row">
+          <div class="col text-center">
+            <img src="app/assets/images/no-wifi.png" class="card-image">
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col">
+            <div class="title">
+              Sem conexão
+            </div>
+            <br/>
+            <div class="subtitle">
+              Você está offline, verifique sua conexão de internet e tente novamente.
+            </div>
+          </div>
+        </div>
+          
+        <div class="row text-center">
+          <div class="col">
+            <button class="button button-positive button-full" ng-click="go_to_home()">Retornar para o início</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>

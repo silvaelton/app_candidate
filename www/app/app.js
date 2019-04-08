@@ -10,7 +10,8 @@ var app = angular.module('codhab', [
 'codhab.controllers.app',
 'codhab.controllers.home',
 'codhab.controllers.information',
-'codhab.controllers.iframe'
+'codhab.controllers.iframe',
+'codhab.controllers.disconnect'
 ])
 
 
@@ -31,7 +32,6 @@ app.run(function($ionicPlatform) {
       angular.element(document.querySelector("div.tab-nav.tabs").remove());
     }
 
-    
     var notificationOpenedCallback = function(jsonData) {
       // alert("Notification opened:\n" + JSON.stringify(jsonData));
       // console.log('notificationOpenedCallback: ' + JSON.stringify(jsonData));
@@ -69,6 +69,11 @@ app.config(function ($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
       templateUrl: 'app/views/iframe/index.html',
       controller: 'IframeController'
     })
+    .state('disconnect', {
+      url: '/disconnect',
+      templateUrl: 'app/views/disconnect/index.html',
+      controller: 'DisconnectController'
+    })
 
   $urlRouterProvider.otherwise('/home');
 });
@@ -76,6 +81,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
 app.config(function ($sceDelegateProvider) {
   $sceDelegateProvider.resourceUrlWhitelist([
     'self',
+    'http://localhost:8001/**',
     'http://localhost:3001/**',
     'http://10.36.26.90:3001/**',
     'http://app.codhab.df.gov.br/**'
