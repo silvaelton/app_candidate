@@ -66,6 +66,7 @@ app.config(function ($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
     })
     .state('iframe', {
       url: '/iframe/:url',
+      cache: false,
       templateUrl: 'app/views/iframe/index.html',
       controller: 'IframeController'
     })

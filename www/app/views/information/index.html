@@ -15,19 +15,21 @@
   </div>
 
   
-  <ion-content scroll="true" id="content">
+
+
+  
+  <ion-content scroll="true" id="content" class="text-center">
     <div class="card" ng-if="env == 'development'">
       <h4 class="text-center">Informação do dispostivo</h4>
-      <h5> Token: {{push_token}} </h5>
-      <h5> UserID: {{device_id}} </h5>
+      <h5> 
+        <b>Token:</b>{{push_token}} </h5>
+      <h5> 
+        <b>UserID:</b> {{device_id}} </h5>
       </p>
     </div>
-  </ion-content>
-
-  <ion-content scroll="true" id="content" class="text-center">
 
     <div class="card">
-
+      
       <div class="row">
         <div class='col'>
           <b>Links úteis</b>
